@@ -1,0 +1,52 @@
+{
+  "title": "Instagram Following Hybrid Input",
+  "type": "object",
+  "schemaVersion": 1,
+  "properties": {
+    "usernames": {
+      "title": "Usernames",
+      "type": "array",
+      "description": "Instagram usernames or profile URLs to inspect.",
+      "editor": "stringList",
+      "default": []
+    },
+    "directUrls": {
+      "title": "Direct URLs",
+      "type": "array",
+      "description": "Optional direct Instagram profile or following URLs.",
+      "editor": "stringList",
+      "default": []
+    },
+    "cookies": {
+      "title": "Cookies",
+      "type": "string",
+      "description": "Optional cookie header value for Plus/VIP runs.",
+      "editor": "textfield",
+      "default": ""
+    },
+    "mode": {
+      "title": "Mode",
+      "type": "string",
+      "enum": ["free", "plus", "vip"],
+      "default": "free"
+    },
+    "maxCount": {
+      "title": "Max Count",
+      "type": "integer",
+      "minimum": 1,
+      "default": 25
+    },
+    "includeProfile": {
+      "title": "Include Profile",
+      "type": "boolean",
+      "default": true
+    },
+    "includeDiagnostics": {
+      "title": "Include Diagnostics",
+      "type": "boolean",
+      "default": true
+    }
+  },
+  "required": [],
+  "additionalProperties": false
+}
