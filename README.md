@@ -12,6 +12,8 @@ Original Apify actor for extracting Instagram following lists with a simple comm
 - Fetches Instagram profile/following pages with a conservative HTML parser.
 - Returns a structured result per target.
 - Preserves partial success when one target fails.
+- Uses cookies and retries in Plus/VIP mode.
+- Returns lean output when `includeDiagnostics` is disabled.
 - Writes a run summary when executed inside Apify.
 
 ## What this actor does not claim yet
@@ -80,4 +82,5 @@ Expected:
 
 - The actor is intentionally original.
 - Cookies are optional but improve success rate in Plus/VIP mode.
+- Plus/VIP also increase retry tolerance for transient HTTP failures.
 - If Instagram does not expose the following list in the fetched page, the actor returns a structured diagnostic instead of failing the whole run.
