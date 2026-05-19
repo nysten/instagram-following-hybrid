@@ -35,6 +35,7 @@ Supported fields:
 - `maxCount`
 - `includeProfile`
 - `includeDiagnostics`
+- `complianceAck`
 
 ### Example
 
@@ -44,7 +45,8 @@ Supported fields:
   "mode": "free",
   "maxCount": 25,
   "includeProfile": true,
-  "includeDiagnostics": true
+  "includeDiagnostics": true,
+  "complianceAck": true
 }
 ```
 
@@ -89,3 +91,4 @@ Expected:
 - Cookies are optional but improve success rate in Plus/VIP mode.
 - Plus/VIP also increase retry tolerance for transient HTTP failures.
 - If Instagram does not expose the following list in the fetched page, the actor returns a structured diagnostic instead of failing the whole run.
+- The actor will not run unless `complianceAck` is explicitly set to `true`.
