@@ -63,6 +63,7 @@ export function normalizeTargets(input = {}) {
     cookies: typeof input.cookies === 'string' ? input.cookies.trim() : '',
     includeProfile: input.includeProfile !== false,
     includeDiagnostics: input.includeDiagnostics !== false,
+    complianceAck: input.complianceAck === true,
     targets,
   };
 }
