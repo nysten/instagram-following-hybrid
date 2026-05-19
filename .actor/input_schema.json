@@ -45,8 +45,14 @@
       "title": "Include Diagnostics",
       "type": "boolean",
       "default": true
+    },
+    "complianceAck": {
+      "title": "Compliance Acknowledgement",
+      "type": "boolean",
+      "description": "Confirm that you have a lawful basis, authorization, and permission to collect and process the data, and that you will comply with applicable laws and Meta terms.",
+      "default": false
     }
   },
-  "required": [],
+  "required": ["complianceAck"],
   "additionalProperties": false
 }
