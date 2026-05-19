@@ -14,6 +14,8 @@ The implementation favors:
 - structured per-target diagnostics
 - partial success over hard failure
 - explicit handling for private, login-required, and blocked states
+- cookies and retry tolerance in Plus/VIP
+- lean output when diagnostics are disabled
 
 Baseline quality targets:
 
