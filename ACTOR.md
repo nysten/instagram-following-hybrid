@@ -16,6 +16,7 @@ The implementation favors:
 - explicit handling for private, login-required, and blocked states
 - cookies and retry tolerance in Plus/VIP
 - lean output when diagnostics are disabled
+- explicit compliance acknowledgement before execution
 
 Baseline quality targets:
 
