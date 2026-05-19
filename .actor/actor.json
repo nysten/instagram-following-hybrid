@@ -1,0 +1,10 @@
+{
+  "actorSpecification": 1,
+  "name": "instagram-following-hybrid",
+  "title": "Instagram Following Hybrid",
+  "description": "Original hybrid actor for Instagram following extraction with Free, Plus, and VIP modes.",
+  "version": "0.0.1",
+  "dockerfile": "./Dockerfile",
+  "readme": "./README.md",
+  "input": "./.actor/input_schema.json"
+}
