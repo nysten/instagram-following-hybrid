@@ -24,3 +24,4 @@ Baseline quality targets:
 - clear failure reasons
 - simple local validation path
 - documentation that matches current behavior
+- clear security and compliance notes
