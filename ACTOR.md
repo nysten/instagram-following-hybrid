@@ -14,3 +14,11 @@ The implementation favors:
 - structured per-target diagnostics
 - partial success over hard failure
 - explicit handling for private, login-required, and blocked states
+
+Baseline quality targets:
+
+- deterministic input normalization
+- readable output contract
+- clear failure reasons
+- simple local validation path
+- documentation that matches current behavior
