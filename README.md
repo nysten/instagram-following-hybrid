@@ -78,6 +78,11 @@ Expected:
 - tests pass
 - local execution prints an empty array when no input is supplied
 
+## Security and Compliance
+
+- Security policy: [`SECURITY.md`](./SECURITY.md)
+- Compliance notes: [`COMPLIANCE.md`](./COMPLIANCE.md)
+
 ## Notes
 
 - The actor is intentionally original.
