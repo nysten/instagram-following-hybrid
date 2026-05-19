@@ -143,6 +143,9 @@ export async function runActor(deps = {}) {
 
   const raw = await rawInput();
   const normalized = normalizeTargets(raw);
+  if (!normalized.complianceAck) {
+    throw new Error('compliance_ack_required');
+  }
   const tier = tierProfile(normalized.mode);
   const config = {
     ...normalized,
